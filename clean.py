@@ -1,5 +1,6 @@
-#itay zaada - 313245581#
-
+#itay zaada #
+#this function is auto clearing data, handling the nulls, ploting all of the numeric data compared to the last column, make OneHotEncoder to the categorical features 
+#and remove highly correlated columns, and standardize the numric data #
 def DataCleaner(name):
     import numpy as np
     import matplotlib.pyplot as plt
@@ -184,8 +185,4 @@ def DataCleaner(name):
     df.to_csv(fname+'_cleaned'+'.csv', index = False, header=True)
 
 
-
-
-import sys
-file = sys.argv[1]
-DataCleaner(file)
+DataCleaner(file)## clear the data ##
